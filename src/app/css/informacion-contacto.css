@@ -1,0 +1,519 @@
+/* Inicio Ripple Out */
+@-webkit-keyframes ani-ripple-out {
+  0% {
+    opacity: 1; }
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }
+@keyframes ani-ripple-out {
+  0% {
+    opacity: 1; }
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }
+
+/* Fin Ripple Out */
+@-webkit-keyframes panDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible; } }
+@keyframes panDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible; } }
+
+/**************** RESPONSIVE *********************/
+/**************** /RESPONSIVE *********************/
+/**************** RESPOSIVE DE LOS FONT *********************/
+/**************** /RESPOSIVE DE LOS FONT *********************/
+/* Inicio iframe responsive */
+/* Fin iframe responsive */
+/* Inicio ajustar texto a la caja usa tres puntos suspensivos al final y en una sola linea */
+/* Fin ajustar texto a la caja usa tres puntos suspensivos al final y en una sola linea */
+/* Inicio ajustar texto a la caja usa tres puntos suspensivos al final y en varias lineas */
+/* Example: @include ajustatrespuntosmultiline(17px, 1.1, 3); */
+/* Fin ajustar texto a la caja usa tres puntos suspensivos al final y en varias lineas */
+/* Inicio ajustar texto a la caja */
+/* Fin ajustar texto a la caja */
+/* Inicio convierte imagen a escala de grises por css y svg 
+*  Para asegurar mayor compatibilidad agrgar en cualquier parte de la pagina el siguiente code:
+* 	<div style="width:0;height:0;"><svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><fecolormatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/></filter></svg></div>
+*/
+/* Fin convierte imagen a escala de grises por css y svg  */
+/* Inicio animacion shadow */
+/* Fin animacion shadow */
+@font-face {
+  font-family: "aquawax_medium";
+  src: url("../fonts/aquawax_medium_trial.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "arvo_regular";
+  src: url("../fonts/arvo_regular.ttf") format("truetype"); }
+
+/****** Dark theme Material Design ******/
+/****** /Dark theme Material Design ******/
+/****** Light theme Material Design ******/
+/****** /Light theme Material Design ******/
+/****** Theme abat  ******/
+/****** /Theme abat  ******/
+/**************** RESPONSIVE *********************/
+/**************** /RESPONSIVE *********************/
+/********* FONTS ***********/
+/********* /FONTS ***********/
+body {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  body.oveflow-hidden {
+    overflow: hidden; }
+
+.lr-global {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
+  .lr-global *,
+  .lr-global *:before,
+  .lr-global *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility; }
+  .lr-global span {
+    margin: 0; }
+  .lr-global img {
+    vertical-align: baseline;
+    max-width: none;
+    height: auto; }
+  .lr-global a {
+    text-decoration: none; }
+    .lr-global a:link {
+      text-decoration: none; }
+    .lr-global a:focus {
+      outline: none; }
+  .lr-global h1,
+  .lr-global h2,
+  .lr-global h3,
+  .lr-global h4,
+  .lr-global h5,
+  .lr-global h6 {
+    margin: 0;
+    padding: 0; }
+  .lr-global p {
+    margin: 0;
+    padding: 0; }
+  .lr-global ul,
+  .lr-global ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .lr-global form {
+    margin: 0; }
+
+.input-number-no-bottom {
+  -moz-appearance: textfield;
+  margin: 0; }
+  .input-number-no-bottom::-webkit-inner-spin-button, .input-number-no-bottom::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+
+.input-searchbox-no-style::-webkit-search-decoration, .input-searchbox-no-style::-webkit-search-cancel-button, .input-searchbox-no-style::-webkit-search-results-button, .input-searchbox-no-style::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+.limpia-input {
+  border: 0; }
+  .limpia-input:focus {
+    outline: 0px; }
+
+.full-width {
+  width: 100%; }
+
+.full-body {
+  min-width: 100%;
+  min-height: 100vh; }
+
+.blockv3-container {
+  width: 96%;
+  margin: auto; }
+
+.shadow-footer {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0); }
+
+.fondo-gray {
+  background: #E5E5E5; }
+
+.container-informacion-contacto {
+  margin-right: 3%;
+  margin-left: 3%; }
+  .container-informacion-contacto .sub-container-informacion-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto {
+      width: 45%; }
+      .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h5 {
+        font-weight: 500;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-family: "arvo_regular"; }
+      .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h4 {
+        font-size: 28px;
+        color: #5E1A6F;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 0px;
+        font-family: "aquawax_medium";
+        text-transform: uppercase; }
+      .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h6 {
+        height: 5px;
+        width: 100%;
+        background-color: #5E1A6F;
+        margin: 8px 0px 30px 0px; }
+      .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #ffffff;
+        font-family: "arvo_regular"; }
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input span {
+          position: absolute;
+          padding-left: 8px;
+          padding-bottom: 10px;
+          font-size: 22px;
+          color: #ffffff; }
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input {
+          border: 1px solid #d8efdb;
+          background-color: #ac8fb6;
+          border-radius: 5px;
+          color: #ffffff;
+          font-size: 16px;
+          padding: 14px 0px 14px 40px;
+          width: 100%;
+          margin-bottom: 10px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input::-webkit-input-placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input::-moz-placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input:-ms-input-placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input::-ms-input-placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input::placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input:focus {
+            outline: none; }
+        @media only screen and (min-width: 577px) and (max-width: 768px) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input span {
+            font-size: 15px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input {
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            margin-bottom: 5px; } }
+        @media only screen and (max-width: maxxspx) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input span {
+            font-size: 15px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input {
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            margin-bottom: 5px; } }
+        @media only screen and (max-width: 576px) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input span {
+            font-size: 15px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input {
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            margin-bottom: 5px; } }
+        @media only screen and (max-width: minxspx) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input span {
+            font-size: 15px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-input input {
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            margin-bottom: 5px; } }
+      .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        color: #768292;
+        font-family: "arvo_regular"; }
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea span {
+          position: absolute;
+          padding-top: 10px;
+          padding-left: 8px;
+          padding-bottom: 10px;
+          font-size: 22px;
+          color: #ffffff; }
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea {
+          color: #768292;
+          font-family: "arvo_regular";
+          border: 1px solid #d8efdb;
+          background-color: #ac8fb6;
+          border-radius: 5px;
+          color: #ffffff;
+          font-size: 16px;
+          padding: 11px 0px 9px 40px;
+          height: 147px;
+          width: 100%;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea::-webkit-input-placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea::-moz-placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea:-ms-input-placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea::-ms-input-placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea::placeholder {
+            color: #d5c6da; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea:focus {
+            outline: none; }
+        @media only screen and (min-width: 577px) and (max-width: 768px) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea span {
+            font-size: 18px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea {
+            font-size: 12px;
+            height: 100px; } }
+        @media only screen and (max-width: maxxspx) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea span {
+            font-size: 18px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea {
+            font-size: 12px;
+            height: 100px; } }
+        @media only screen and (max-width: 576px) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea span {
+            font-size: 18px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea {
+            font-size: 12px;
+            height: 100px; } }
+        @media only screen and (max-width: minxspx) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea span {
+            font-size: 18px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .container-form-textarea textarea {
+            font-size: 12px;
+            height: 100px; } }
+      .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .style-button-block10 {
+        font-family: "arvo_regular"; }
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .style-button-block10 input {
+          padding: 14px 0px 14px 0px;
+          cursor: pointer;
+          border: 2px solid;
+          background-color: #5E1A6F;
+          border-color: gray;
+          color: #ffffff;
+          font-size: 18px;
+          border-radius: 5px;
+          width: 100%;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .style-button-block10 input:hover {
+            background-color: #eef5fd;
+            color: #5E1A6F; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .style-button-block10 input:focus {
+            outline: none; }
+        @media only screen and (min-width: 577px) and (max-width: 768px) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .style-button-block10 input {
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            margin: 5px 0 5px 0; } }
+        @media only screen and (max-width: maxxspx) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .style-button-block10 input {
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            margin: 5px 0 5px 0; } }
+        @media only screen and (max-width: 576px) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .style-button-block10 input {
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            margin: 5px 0 5px 0; } }
+        @media only screen and (max-width: minxspx) {
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto .style-button-block10 input {
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            margin: 5px 0 5px 0; } }
+      .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto p a {
+          text-decoration: none; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto p a span {
+            font-size: 30px;
+            margin: 0px 15px 0px 15px;
+            color: #5E1A6F; }
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto {
+          width: 55%; } }
+      @media only screen and (min-width: 577px) and (max-width: 768px) {
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto {
+          width: 55%; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h5 {
+            font-size: 18px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h4 {
+            font-size: 20px;
+            font-size: 200; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto p a span {
+            font-size: 15px; } }
+      @media only screen and (max-width: maxxspx) {
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto {
+          width: 55%; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h5 {
+            font-size: 18px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h4 {
+            font-size: 20px;
+            font-size: 200; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto p a span {
+            font-size: 15px; } }
+      @media only screen and (max-width: 576px) {
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto {
+          width: 55%; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h5 {
+            font-size: 18px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h4 {
+            font-size: 20px;
+            font-size: 200; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto p a span {
+            font-size: 15px; } }
+      @media only screen and (max-width: minxspx) {
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto {
+          width: 55%; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h5 {
+            font-size: 18px; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto h4 {
+            font-size: 20px;
+            font-size: 200; }
+          .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto p a span {
+            font-size: 15px; } }
+    .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto {
+      width: 35%; }
+      .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h5 {
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-family: "arvo_regular"; }
+      .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-family: "arvo_regular";
+        margin: 0px 0px 5px 0px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 span {
+          color: #444444;
+          font-size: 30px;
+          padding-right: 20px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 p {
+          font-weight: 100;
+          font-size: 16px; }
+      @media only screen and (min-width: 577px) and (max-width: 768px) {
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h5 {
+          font-size: 18px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 span {
+          font-size: 18px;
+          padding-right: 10px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 p {
+          font-size: 15px; } }
+      @media only screen and (max-width: maxxspx) {
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h5 {
+          font-size: 18px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 span {
+          font-size: 18px;
+          padding-right: 10px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 p {
+          font-size: 15px; } }
+      @media only screen and (max-width: 576px) {
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h5 {
+          font-size: 18px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 span {
+          font-size: 18px;
+          padding-right: 10px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 p {
+          font-size: 15px; } }
+      @media only screen and (max-width: minxspx) {
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h5 {
+          font-size: 18px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 span {
+          font-size: 18px;
+          padding-right: 10px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .descripcion-informacion-contacto h6 p {
+          font-size: 15px; } }
+      .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .imagen-contacto {
+        text-align: center;
+        margin-top: 40px; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .imagen-contacto img {
+          width: 300px;
+          -o-object-fit: contain;
+             object-fit: contain; }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .imagen-contacto img {
+              width: 200px; } }
+          @media only screen and (min-width: 577px) and (max-width: 768px) {
+            .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .imagen-contacto img {
+              width: 150px; } }
+          @media only screen and (max-width: maxxspx) {
+            .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .imagen-contacto img {
+              width: 150px; } }
+          @media only screen and (max-width: 576px) {
+            .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .imagen-contacto img {
+              display: none; } }
+          @media only screen and (max-width: minxspx) {
+            .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto .imagen-contacto img {
+              display: none; } }
+    @media only screen and (max-width: 576px) {
+      .container-informacion-contacto .sub-container-informacion-contacto {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto {
+          width: 100%; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto {
+          width: 100%; } }
+    @media only screen and (max-width: minxspx) {
+      .container-informacion-contacto .sub-container-informacion-contacto {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .container-informacion-contacto .sub-container-informacion-contacto .formulario-contacto {
+          width: 100%; }
+        .container-informacion-contacto .sub-container-informacion-contacto .container-informacion-contacto {
+          width: 100%; } }

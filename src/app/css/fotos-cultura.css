@@ -1,0 +1,494 @@
+/* Inicio Ripple Out */
+@-webkit-keyframes ani-ripple-out {
+  0% {
+    opacity: 1; }
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }
+@keyframes ani-ripple-out {
+  0% {
+    opacity: 1; }
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0; } }
+
+/* Fin Ripple Out */
+@-webkit-keyframes panDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible; } }
+@keyframes panDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible; } }
+
+/**************** RESPONSIVE *********************/
+/**************** /RESPONSIVE *********************/
+/**************** RESPOSIVE DE LOS FONT *********************/
+/**************** /RESPOSIVE DE LOS FONT *********************/
+/* Inicio iframe responsive */
+/* Fin iframe responsive */
+/* Inicio ajustar texto a la caja usa tres puntos suspensivos al final y en una sola linea */
+/* Fin ajustar texto a la caja usa tres puntos suspensivos al final y en una sola linea */
+/* Inicio ajustar texto a la caja usa tres puntos suspensivos al final y en varias lineas */
+/* Example: @include ajustatrespuntosmultiline(17px, 1.1, 3); */
+/* Fin ajustar texto a la caja usa tres puntos suspensivos al final y en varias lineas */
+/* Inicio ajustar texto a la caja */
+/* Fin ajustar texto a la caja */
+/* Inicio convierte imagen a escala de grises por css y svg 
+*  Para asegurar mayor compatibilidad agrgar en cualquier parte de la pagina el siguiente code:
+* 	<div style="width:0;height:0;"><svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><fecolormatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/></filter></svg></div>
+*/
+/* Fin convierte imagen a escala de grises por css y svg  */
+/* Inicio animacion shadow */
+/* Fin animacion shadow */
+@font-face {
+  font-family: "aquawax_medium";
+  src: url("../fonts/aquawax_medium_trial.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "arvo_regular";
+  src: url("../fonts/arvo_regular.ttf") format("truetype"); }
+
+/****** Dark theme Material Design ******/
+/****** /Dark theme Material Design ******/
+/****** Light theme Material Design ******/
+/****** /Light theme Material Design ******/
+/****** Theme abat  ******/
+/****** /Theme abat  ******/
+/**************** RESPONSIVE *********************/
+/**************** /RESPONSIVE *********************/
+/********* FONTS ***********/
+/********* /FONTS ***********/
+body {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  body.oveflow-hidden {
+    overflow: hidden; }
+
+.lr-global {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
+  .lr-global *,
+  .lr-global *:before,
+  .lr-global *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility; }
+  .lr-global span {
+    margin: 0; }
+  .lr-global img {
+    vertical-align: baseline;
+    max-width: none;
+    height: auto; }
+  .lr-global a {
+    text-decoration: none; }
+    .lr-global a:link {
+      text-decoration: none; }
+    .lr-global a:focus {
+      outline: none; }
+  .lr-global h1,
+  .lr-global h2,
+  .lr-global h3,
+  .lr-global h4,
+  .lr-global h5,
+  .lr-global h6 {
+    margin: 0;
+    padding: 0; }
+  .lr-global p {
+    margin: 0;
+    padding: 0; }
+  .lr-global ul,
+  .lr-global ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .lr-global form {
+    margin: 0; }
+
+.input-number-no-bottom {
+  -moz-appearance: textfield;
+  margin: 0; }
+  .input-number-no-bottom::-webkit-inner-spin-button, .input-number-no-bottom::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+
+.input-searchbox-no-style::-webkit-search-decoration, .input-searchbox-no-style::-webkit-search-cancel-button, .input-searchbox-no-style::-webkit-search-results-button, .input-searchbox-no-style::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+.limpia-input {
+  border: 0; }
+  .limpia-input:focus {
+    outline: 0px; }
+
+.full-width {
+  width: 100%; }
+
+.full-body {
+  min-width: 100%;
+  min-height: 100vh; }
+
+.blockv3-container {
+  width: 96%;
+  margin: auto; }
+
+.shadow-footer {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0); }
+
+.fondo-gray {
+  background: #E5E5E5; }
+
+.container-fotos-cultura {
+  padding-left: 3%;
+  padding-right: 3%; }
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: end; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+  @media only screen and (max-width: maxxspx) {
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: end; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: end; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: end; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+  @media only screen and (min-width: 1201px) {
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n+1) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h5 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: end; }
+    .container-fotos-cultura .sub-container-fotos-cultura:nth-child(2n) .title-fotos-cultura h6 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+  .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h5 {
+      text-transform: uppercase;
+      width: 22%;
+      font-size: 25px;
+      font-family: "aquawax_medium";
+      font-weight: 400; }
+    .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h6 {
+      height: 6px;
+      width: 75%;
+      background-color: #5E1A6F; }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h5 {
+        width: 26%; }
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h6 {
+        width: 74%; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h5 {
+        width: 32%;
+        font-size: 24px; }
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h6 {
+        width: 68%; } }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h5 {
+        width: 42%;
+        font-size: 20px; }
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h6 {
+        width: 58%; } }
+    @media only screen and (max-width: maxxspx) {
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h5 {
+        width: 42%;
+        font-size: 20px; }
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h6 {
+        width: 58%; } }
+    @media only screen and (max-width: 576px) {
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h5 {
+          width: auto;
+          font-size: 18px;
+          margin: 10px 0px 2px 0px;
+          text-align: center; }
+        .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h6 {
+          width: 45%;
+          margin: 0px 0px 10px 0px;
+          text-align: center; } }
+    @media only screen and (max-width: minxspx) {
+      .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h5 {
+          width: auto;
+          font-size: 18px;
+          margin: 10px 0px 2px 0px;
+          text-align: center; }
+        .container-fotos-cultura .sub-container-fotos-cultura .title-fotos-cultura h6 {
+          width: 45%;
+          margin: 0px 0px 10px 0px;
+          text-align: center; } }
+  .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz {
+    width: 96%; }
+    .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura {
+        height: 500px; }
+        .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(1) {
+          width: 49%; }
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(1) a img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+               object-fit: cover; }
+          @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(1) {
+              width: 53%; } }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(1) {
+              width: 53%; } }
+          @media only screen and (max-width: 576px) {
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(1) {
+              width: 100%; }
+              .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(1) a img {
+                height: 280px; } }
+          @media only screen and (max-width: minxspx) {
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(1) {
+              width: 100%; }
+              .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(1) a img {
+                height: 280px; } }
+        .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) {
+          width: 49%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(1) {
+            height: 34.5%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(1) .c-woz-cultura {
+              width: 48%; }
+              .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(1) .c-woz-cultura a img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                   object-fit: cover; }
+              @media only screen and (max-width: 576px) {
+                .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(1) .c-woz-cultura {
+                  width: 48%; }
+                  .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(1) .c-woz-cultura a img {
+                    height: 150px; } }
+              @media only screen and (max-width: minxspx) {
+                .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(1) .c-woz-cultura {
+                  width: 48%; }
+                  .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(1) .c-woz-cultura a img {
+                    height: 150px; } }
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(2) {
+            width: 100%;
+            height: 62%; }
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(2) a img {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: cover;
+                 object-fit: cover; }
+            @media only screen and (max-width: 576px) {
+              .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(2) {
+                height: 250px; } }
+            @media only screen and (max-width: minxspx) {
+              .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) .b-woz-cultura:nth-child(2) {
+                height: 250px; } }
+          @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) {
+              width: 45%; } }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) {
+              width: 45%; } }
+          @media only screen and (max-width: 576px) {
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) {
+              width: 100%; } }
+          @media only screen and (max-width: minxspx) {
+            .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura:nth-child(2) {
+              width: 100%; } }
+        @media only screen and (min-width: 993px) and (max-width: 1200px) {
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura {
+            height: 440px; } }
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura {
+            height: 400px; } }
+        @media only screen and (min-width: 577px) and (max-width: 768px) {
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura {
+            height: 260px; } }
+        @media only screen and (max-width: maxxspx) {
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura {
+            height: 260px; } }
+        @media only screen and (max-width: 576px) {
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura {
+            height: auto; } }
+        @media only screen and (max-width: minxspx) {
+          .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz .a-woz-cultura {
+            height: auto; } }
+      @media only screen and (max-width: 576px) {
+        .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+      @media only screen and (max-width: minxspx) {
+        .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz .sub-content-fotos-woz {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz {
+        width: 100%; } }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+      .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz {
+        width: 100%; } }
+    @media only screen and (max-width: maxxspx) {
+      .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz {
+        width: 100%; } }
+    @media only screen and (max-width: 576px) {
+      .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz {
+        width: 100%; } }
+    @media only screen and (max-width: minxspx) {
+      .container-fotos-cultura .sub-container-fotos-cultura .content-fotos-woz {
+        width: 100%; } }
+  @media only screen and (min-width: 1201px) {
+    .container-fotos-cultura {
+      margin-top: -45px; } }
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    .container-fotos-cultura {
+      margin-top: 20px; } }
+  @media only screen and (max-width: maxxspx) {
+    .container-fotos-cultura {
+      margin-top: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .container-fotos-cultura {
+      margin-top: 28px; } }
+  @media only screen and (max-width: minxspx) {
+    .container-fotos-cultura {
+      margin-top: 28px; } }
