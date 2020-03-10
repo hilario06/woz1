@@ -1,0 +1,43 @@
+@import 'sass/index';
+@import "base/index";
+
+.container-seconds-block-woz{
+    margin-top: -550px; //630
+    margin-bottom: 180px;
+    margin-left: 3%; margin-right: 3%;
+    display: flex; justify-content: center; flex-direction: column;
+    .sub-container-seconds-block-woz{
+        .container-seconds-img-woz{ display: flex; 
+            img{
+                width: 25%; object-fit: contain;
+                @include respondto(md){ width:28%;}
+                @include respondto(sm){ width: 28%; }
+                @include respondto(maxxs){ width: 33%; }
+                @include respondto(minxs){ width: 100px; }
+            }
+        }
+        h3{
+            text-transform: uppercase;font-family:"aquawax_medium"; width: 45%;
+            font-size: 28px;font-weight: 700; margin-bottom: 15px; margin-top: 160px;
+        }
+        h6{
+            font-family:"arvo_regular"; font-size: 17px;font-weight: 500; margin: 0;width: 50%;
+        }
+        @include respondto(md){ h3{ margin-top: 90px; width: 43%;} }
+        @include respondto(sm){ h3{ margin-top: 80px; width: 43%; font-size: 22px;} h6{width: 45%;}}
+        @include respondto(maxxs){
+            h3{ -webkit-margin-top: 60px; margin-top: 60px; width: 52%; font-size: 20px; } h6{width: 60%; }
+        }
+        @include respondto(minxs){
+            h3{ -webkit-margin-top: 50px; margin-top: 50px;  width: 68%; font-size: 20px;} h6{width: 100%;font-size: 16px;}
+        }
+    }
+    @include respondto(md){ margin-top: -410px; margin-bottom: 110px;}
+    @include respondto(sm){ margin-top: -350px;  margin-bottom: 60px;}
+    @include respondto(maxxs){ 
+        -webkit-margin-top:-291px; margin-top: -291px;  
+        -webkit-margin-bottom: 40px; margin-bottom: 40px;}
+    @include respondto(minxs){ 
+        -webkit-margin-top:-170px; margin-top: -170px;  
+        -webkit-margin-bottom: 30px; margin-bottom: 30px; }
+}

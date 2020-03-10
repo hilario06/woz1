@@ -1,0 +1,15 @@
+@import 'sass/index';
+@import "base/index";
+
+.migas-pan-contecto{
+    margin-top: 65px;
+    h5{
+        margin-left: 3%; font-size: 16px; font-family:"arvo_regular";
+        a{text-decoration: none; color: black; &:hover{color: #ac8fb6;;}}
+        span{color: #5E1A6F;}
+
+    }
+    @include respondto(sm){ margin-top: 50px; h5{ font-size: 16px;} }
+    @include respondto(maxxs){margin-top: 40px; h5{font-size: 14px;}}
+    @include respondto(minxs){margin-top: 40px; h5{font-size: 14px;}}
+}

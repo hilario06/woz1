@@ -1,0 +1,15 @@
+@include respondto(minxs) {}
+@include respondto(maxxs) {}
+@include respondto(sm) {}
+@include respondto(md) {}
+@include respondto(lg) {}
+
+.sass{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,87 @@
+@import 'sass/index';
+@import "base/index";
+
+.container-fotos-cultura{
+    padding-left: 3%;
+    padding-right: 3%;
+    .sub-container-fotos-cultura{
+        @include respondto(maxxs,sm,md, lg){
+            &:nth-child(2n+1){
+                .title-fotos-cultura{h5{order: 1;} h6{order: 2;} }
+            }
+            &:nth-child(2n){
+                .title-fotos-cultura{h5{order: 2; text-align: end;} h6{order: 1;} }
+            }
+        }
+        .title-fotos-cultura{
+            display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+            h5{ text-transform: uppercase; width: 22%; font-size: 25px;
+                font-family:"aquawax_medium"; font-weight: 400; 
+            }
+            h6{ height: 6px; width: 75%; background-color: #5E1A6F; }
+            @include respondto(md){ h5{ width: 26%;} h6{ width: 74%;}}
+            @include respondto(sm){ h5{ width: 32%; font-size: 24px;} h6{ width: 68%;}}
+            @include respondto(maxxs){ h5{ width: 42%; font-size: 20px;} h6{ width: 58%;}}
+            @include respondto(minxs){  flex-direction: column; justify-content: center;
+                h5{ width: auto; font-size: 18px; margin: 10px 0px 2px 0px; text-align: center;}
+                h6{ width: 45%; margin: 0px 0px 10px 0px; text-align: center;}}
+        }
+        .content-fotos-woz{
+            width: 96%;
+            .sub-content-fotos-woz{
+                display: flex; 
+                flex-wrap: wrap; justify-content: space-between;
+                .a-woz-cultura{
+                    height: 500px;
+                    &:nth-child(1){
+                        width: 49%; 
+                        a{
+                            img{ width: 100%; height: 100%; object-fit: cover;}
+                        }
+                        @include respondto(md){width: 53%;}
+                        @include respondto(sm){width: 53%;}
+                        @include respondto(minxs){width: 100%; a{ img{height: 280px;}} }
+                    }
+                    &:nth-child(2){
+                        width: 49%;
+                        display: flex; flex-direction: column; justify-content: space-between;
+                        .b-woz-cultura{ 
+                            &:nth-child(1){ height: 34.5%;
+                                display: flex;  justify-content: space-between;
+                                .c-woz-cultura{
+                                    width: 48%;   
+                                    a{ 
+                                        img{ width: 100%; height:100%; object-fit: cover;}
+                                    }
+                                    @include respondto(minxs){width: 48%; a{img{height: 150px;}}}
+                                }
+                            }
+                            &:nth-child(2){  width: 100%; height: 62%; 
+                                a{   
+                                    img{ width: 100%; height: 100%; object-fit: cover;}
+                                }
+                                @include respondto(minxs){height: 250px;}
+                            }
+                        }
+                        @include respondto(md){width: 45%;}
+                        @include respondto(sm){width: 45%;}
+                        @include respondto(minxs){width: 100%;}
+                    }
+                    @include respondto(md){height: 440px;}
+                    @include respondto(sm){height: 400px;}
+                    @include respondto(maxxs){height: 260px;}
+                    @include respondto(minxs){height: auto;}
+                }
+                @include respondto(minxs){
+                    flex-direction: column;
+                }  
+            }
+            @include respondto(sm){ width: 100%;}
+            @include respondto(maxxs){ width: 100%;}
+            @include respondto(minxs){ width: 100%;}
+        }
+    }
+    @include respondto(lg){margin-top: -45px;}
+    @include respondto(maxxs){ margin-top: 20px;}
+    @include respondto(minxs){ margin-top: 28px; }
+}

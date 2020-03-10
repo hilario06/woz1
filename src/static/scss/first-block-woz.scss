@@ -1,0 +1,26 @@
+@import 'sass/index';
+@import "base/index";
+ 
+.container-first-block-woz{
+    //width: 100%;
+    .container-first-img-woz{
+        display: flex; 
+        justify-content: flex-end; 
+        img{ 
+            &:nth-child(1){
+               width: 65%; height: auto;
+                @include respondto(md){ width: 65%; }
+                @include respondto(sm){width: 70%; }
+                @include respondto(maxxs){ display: none; }
+                @include respondto(minxs){ display: none; }
+            }
+            &:nth-child(2){ height: auto;
+                @include respondto(lg){display: none;}
+                @include respondto(md){display: none;}
+                @include respondto(sm){ display: none;}
+                @include respondto(maxxs){ width: 65%;  object-fit: contain;}
+                @include respondto(minxs){  height: 250px; object-fit: contain; }
+            }
+        }
+    }
+}

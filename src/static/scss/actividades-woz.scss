@@ -1,0 +1,56 @@
+@import 'sass/index';
+@import "base/index";
+
+
+.container-activities-woz{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 15px 0px 15px 0px;
+    z-index: 3;
+    position: relative;
+    .sub-container-activities-woz{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .a-activities-woz{
+            width: 24%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px gray;
+            &:nth-child(odd){
+                border-top: 15px solid purple;
+                border-bottom: 15px solid #ffffff;
+                background-color: #ffffff;
+            }
+            &:nth-child(even){
+                border-bottom: 15px solid purple;
+                border-top: 15px solid #ffffff;
+                background-color: #ffffff;
+            }
+            img{ width: 100%; object-fit: cover; background-color: transparent;  z-index: 4; 
+               
+            }
+            &:hover{
+                img{ transform: scale(1.02); }
+            }
+            h4{ font-family: "aquawax_medium";
+                text-align: right; position: relative; margin: 15px 10px 15px 10px; padding-bottom: 8px;
+                &:after{
+                    content: ""; height: 5px; width: 70%; background-color: #5E1A6F; position: absolute;
+                    bottom: 0; left: 30%; 
+                }
+                a{
+                    text-decoration: none; color: black;
+                    &:hover{color:#5E1A6F;}
+                }
+                @include respondto(minxs){
+                    font-size: 13px;
+                }
+            }
+            @include respondto(sm){ width: 49%; margin: 10px 0px 10px 0px; }
+            @include respondto(maxxs){width: 49%; margin: 10px 0px 10px 0px;}
+            @include respondto(minxs){width: 49%; margin: 0px 0px 10px 0px; 
+                h4{font-size: 13px; margin: 10px 5px 10px 5px;}
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import 'sass/index';
+@import "base/index";
+.container-footer-woz{
+    margin-top: 150px;
+    background-image: url("../img/footer21.png");
+    height: 535px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container-img-footer-woz{
+        img{
+            @include respondto(sm){width: 100px; object-fit: contain;}
+            @include respondto(maxxs){width: 90px; object-fit: contain;}
+            @include respondto(minxs){width: 50px; object-fit: contain;}
+        }
+    }
+    h4{ font-family:"arvo_regular"; font-size: 17px; padding-bottom: 130px;}
+    h5{ text-align: center; color: #ffffff; font-family:"arvo_regular"; font-size: 17px;}
+    .container-marca-footer-woz{
+        display: flex;
+        justify-content: center;
+        img{margin-left: 10px; margin-right: 10px;
+            @include respondto(md){ margin-bottom: 25px;}
+            @include respondto(sm){ margin-bottom: 25px;
+                &:nth-child(1){ width: 95px;object-fit: contain;}
+                &:nth-child(2){ width: 95px;object-fit: contain;}}
+            @include respondto(maxxs){margin-bottom: 25px;
+                &:nth-child(1){ width: 95px;object-fit: contain;}
+                &:nth-child(2){ width: 65px;object-fit: contain;}}
+            @include respondto(minxs){margin-bottom: 10px;
+                &:nth-child(1){ width: 80px;object-fit: contain;}
+                &:nth-child(2){ width: 45px;object-fit: contain;}}
+        }
+    }
+  //  background-position: center center;
+    @include respondto(md){ height: 510px; margin-top: 105px; h4{ padding-bottom: 115px;}}
+    @include respondto(sm){ height: 380px; margin-top: 80px; h4{ padding-bottom: 60px;font-size: 16px;} h5{font-size: 16px;}}
+    @include respondto(maxxs){ height: 315px; margin-top: 60px;  h4{ padding-bottom: 25px;font-size: 16px;} h5{font-size: 16px;}}
+    @include respondto(minxs){ justify-content: flex-end; height: 260px; margin-top: 25px; 
+        h4{ padding-bottom: 35px;font-size: 12px;text-align: center;} h5{font-size: 12px;}}
+}

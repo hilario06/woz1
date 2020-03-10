@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    &.oveflow-hidden {
+        overflow: hidden;
+    }
+}
+
+// class="lr-global" esta clase se debe colocar para todo
+.lr-global {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+    }
+    span {
+        margin: 0;
+    }
+    img {
+        vertical-align: baseline;
+        max-width: none;
+        height: auto;
+    }
+    a {
+        text-decoration: none;
+        &:link {
+            text-decoration: none;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    ul,
+    ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    form {
+        margin: 0;
+    }
+}
+
+// Number Input Styles
+// input[type="number"]{}
+.input-number-no-bottom {
+    -moz-appearance: textfield;
+    margin: 0;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+// Searchbox Input Styles
+// input[type="search"]{}
+.input-searchbox-no-style {
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        -webkit-appearance: none;
+    }
+}
+
+.limpia-input {
+    border: 0;
+    &:focus {
+        outline: 0px;
+    }
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-body {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.blockv3-container {
+    width: 96%;
+    //max-width: 1170px;// lo cambie porque no permitia que el navar sea mas grande
+    margin: auto;
+}
+
+.shadow-footer {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, 0);
+}
+
+.fondo-gray {
+    background: $background-general;
+}

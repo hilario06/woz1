@@ -1,0 +1,32 @@
+@import 'sass/index';
+@import "base/index";
+
+.container-initial-fund-activities{
+    background-color: #5E1A6F;
+    height: 350px;
+    display: flex; flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    h4{
+        width: 100%; text-align: center;
+        text-transform: uppercase;font-family:"aquawax_medium"; 
+        font-size: 32px;font-weight: 700; color: #ffffff;
+        align-self: center;
+    }
+    .container-img-initial-fund-activities{
+        width: 100%;
+        img{
+            width: 100%; 
+        }
+        @include respondto(lg){margin-bottom: -43px; img{object-fit: cover;}}
+        @include respondto(md){margin-bottom: -37.5px;}
+        @include respondto(sm){margin-bottom: -31px;}
+        @include respondto(maxxs){margin-bottom: -24.5px;}
+        @include respondto(minxs){margin-bottom: -17px;}
+    }
+    @include respondto(lg){h4{font-size: 28px; margin-bottom: -200px;}}
+    @include respondto(md){ height: 270px; h4{font-size: 26px; margin-bottom: -150px;}}
+    @include respondto(sm){height: 245px; h4{font-size: 25px; margin-bottom: -145px;}}
+    @include respondto(maxxs){height: 230px; h4{font-size: 23px; margin-bottom: -145px;}}
+    @include respondto(minxs){height: 190px; h4{font-size: 16px; margin-bottom: -145px;}}
+}
